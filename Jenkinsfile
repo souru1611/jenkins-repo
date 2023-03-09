@@ -6,7 +6,7 @@ pipeline {
         stage ('Compile Stage') {
 
             steps {
-                
+                    sh 'sudo mvn install'
                     sh 'sudo mvn clean compile'
                 }
             
@@ -15,7 +15,7 @@ pipeline {
         stage ('Testing Stage') {
 
             steps {
-                
+                    sh 'sudo mvn install'
                     sh 'sudo mvn test'
                 }
             
@@ -24,7 +24,7 @@ pipeline {
 
         stage ('Install Stage') {
             steps {
-                
+                    sh 'sudo mvn install'
                     sh 'sudo mvn install'
                 }
             
