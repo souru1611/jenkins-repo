@@ -7,7 +7,6 @@ pipeline {
 
             steps {
                     sh 'sudo yum install git -y'
-                    sh 'yum git remote add origin https://github.com/souru1611/jenkins-repo.git '
                     sh 'sudo yum install maven -y'
                     sh 'sudo mvn install '
                     sh 'sudo mvn clean compile'
