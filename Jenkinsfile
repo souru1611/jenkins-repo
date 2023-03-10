@@ -7,7 +7,7 @@ pipeline {
 
             steps {
                     sh 'sudo yum install git -y'
-                    sh 'sudo yum install maven -y ' 
+                    sh 'sudo yum install maven -y'
                     sh 'sudo mvn install '
                     sh 'sudo mvn clean compile'
                 }
@@ -19,14 +19,14 @@ pipeline {
             steps {
                     
                     sh 'sudo mvn test'
-            }
+                }
             
         }
 
 
         stage ('Install Stage') {
             steps {
-                   
+                    
                     sh 'sudo mvn install'
                 }
             
