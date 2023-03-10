@@ -19,7 +19,7 @@ pipeline {
             steps {
                     
                     sh 'sudo mvn test'
-                }
+            }
             
         }
 
