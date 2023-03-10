@@ -7,6 +7,7 @@ pipeline {
 
             steps {
                     sh 'sudo yum install git -y'
+                    sh 'yum git remote add origin 
                     sh 'sudo yum install maven -y'
                     sh 'sudo mvn install '
                     sh 'sudo mvn clean compile'
